@@ -48,5 +48,3 @@ class Module:
 
 
 Module.main()
-
-'../odr-cosmos-customer-portal/dist/odr-cosmos-customer-portal'
