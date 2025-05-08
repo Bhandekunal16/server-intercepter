@@ -12,6 +12,7 @@ class Module:
             print("2) Run Node application with path")
             print("3) List currently open ports")
             print("4) Bind HTTP server to all interfaces")
+            print("5) scan network around!")
 
             try:
                 user_input = int(input("Enter your choice: "))
@@ -41,6 +42,8 @@ class Module:
                 Application.local_server_binder(port, path)
             except ValueError:
                 print("Port must be a number.")
+        elif choice == 5:
+            Application.scan_wifi_network()
         else:
             print("Invalid input. Please choose a valid option.")
 

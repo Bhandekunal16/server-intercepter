@@ -28,6 +28,10 @@ class Application:
     @staticmethod
     def scan_http_server():
         Support.process_run_time(["./maintainer.bin"], "maintainer.bin")
+        
+    @staticmethod
+    def scan_wifi_network():
+        Support.process_run_time(["./networkScan.bin"], "networkScan.bin")
 
     @staticmethod
     def node_runner(entryPoint: str):
